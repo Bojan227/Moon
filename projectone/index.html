@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Order summary card</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300;501&display=swap');
+
+    * {
+      font-family: 'Red Hat Display', sans-serif;
+      font-weight: 500;
+      font-size: 16px;
+      color: gray;
+      box-sizing: border-box;
+    }
+
+    h1,
+    h2 {
+      color: black;
+    }
+
+
+
+    h1 {
+      font-weight: 900;
+    }
+
+    h2 {
+      font-weight: 700;
+    }
+
+    button {
+      background-color: hsl(245, 75%, 52%);
+      border-radius: 10px;
+      padding: 14px 40px;
+      width: 100%;
+      border: none;
+      font-size: 20px;
+      color: white;
+
+    }
+
+    button:hover {
+      background-color: hsl(224, 23%, 55%);
+    }
+
+    body {
+      background-image: url('./images/pattern-background-desktop.svg');
+      background-repeat: no-repeat;
+      height: 100%;
+      background-attachment: fixed;
+      background-size: cover;
+
+    }
+
+    .title,
+    .paragraph {
+      text-align: center;
+    }
+
+    .container {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 450px;
+
+    }
+
+    .hero-image img {
+
+      position: relative;
+      top: 20px;
+      border-top-left-radius: 25px;
+      border-top-right-radius: 25px;
+    }
+
+    .summary {
+      background-color: hsl(225, 100%, 98%);
+      padding: 15px;
+      border-bottom-left-radius: 25px;
+      border-bottom-right-radius: 25px;
+      height: auto;
+    }
+
+    .change-plan {
+      position: relative;
+      top: 20px;
+    }
+
+    .change-plan a:hover {
+      color: blue;
+    }
+
+    .cancel-order {
+      text-align: center;
+
+      position: relative;
+      top: 10px;
+    }
+
+    .cancel-order a {
+      color: gray;
+      text-decoration: none;
+
+    }
+
+    /* .plan-purchase {
+      display: flex;
+      flex-direction: row;
+      /* default value; can be omitted */
+    /* flex-wrap: nowrap; */
+    /* default value; can be omitted */
+    /* justify-content: space-between; */
+    /* switched from default (flex-start, see below) */
+
+    .logo {
+      float: left;
+      width: 100px;
+    }
+
+    .change-plan {
+      float: right;
+      width: 100px;
+    }
+
+    .plan {
+      margin: 0 auto;
+      width: 100px;
+      position: relative;
+      right: 95px;
+    }
+
+    .plan-purchase {
+      background-color: hsl(231, 30%, 95%);
+      border-radius: 10px;
+    }
+
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="hero-image">
+      <img src="./images/illustration-hero.svg" alt="Hero">
+    </div>
+    <div class="summary">
+      <div class="title">
+        <h1>Order Summary</h1>
+      </div>
+      <div class="paragraph">
+        <p>You can now listen to millions of songs,<br> audiobooks, and podcasts on any
+          device<br> anywhere you like!</p>
+      </div>
+      <div class="plan-purchase">
+
+        <div class="logo">
+          <img src="./images/icon-music.svg" alt="">
+        </div>
+
+        <div class="change-plan">
+          <a href="#">Change</a>
+        </div>
+
+        <div class="plan">
+          <h2>Annual Plan</h2>
+          <p>$59.99/year</p>
+        </div>
+
+
+
+
+      </div>
+      <div class="button">
+        <button>Proceed to Payment</button>
+      </div>
+      <div class="cancel-order">
+        <a href="#">Cancel Order</a>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+</body>
+
+</html>
